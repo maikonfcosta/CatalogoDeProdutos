@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Catalogo de Produtos</title>
+</head>
+<body>
+
+    <header>
+        <h1>Catalogo de Produtos</h1>
+        <input type="text" id="searchInput" placeholder="Pesquisar produto">
+        <button onclick="searchProduct()">Pesquisar</button>
+        <!-- Adicione o balão de notificação no botão do carrinho -->
+        <a href="cart.html" id="cartButton">
+            <img src="imagem/carrinho.svg" alt="Ícone do Carrinho" width="30" >
+            <span id="cartBadge">0</span>
+        </a>
+
+        <button onclick="clearCart()">Limpar Carrinho</button>
+    </header>
+
+    <main id="productCatalog">
+        <div class="product" data-name="Produto 1" data-price="R$ 50,00" data-size="M" data-image="product1.jpg">
+            <img src="product1.jpg" alt="Produto 1">
+            <h2>Produto 1</h2>
+            <p>Preço: R$ 50,00</p>
+            <p>Tamanho: M</p>
+            <p>Descrição do Produto 1</p>
+            <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+        </div>
+    
+        <div class="product" data-name="Produto 2" data-price="R$ 35,00" data-size="L" data-image="product2.jpg">
+            <img src="product2.jpg" alt="Produto 2">
+            <h2>Produto 2</h2>
+            <p>Preço: R$ 35,00</p>
+            <p>Tamanho: L</p>
+            <p>Descrição do Produto 2</p>
+            <button onclick="addToCart(this)">Adicionar ao Carrinho</button>
+        </div>
+    
+        <!-- Adicione mais produtos conforme necessário -->
+    
+    </main>
+   
+</body>
+</html>
